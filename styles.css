@@ -3,6 +3,75 @@
     margin:0;
     box-sizing:border-box;
 }
+:root{
+    --gray-text:#7A7A7A;
+    --blue-bg:#C8DAF8;
+    --blue-btn:#202A48;
+    --no-thanks:#B5CDF3;
+}
+body{
+    font-family:"Poppins", sans-serif;
+    background:var(--blue-bg);
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border-radius:20px;
+    background:white;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding:.5em;
+}
+.info-div{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    height:60vh;
+    width:80%;
+}
+input{
+    padding:2em;
+    display:none;
+}
+.main-text{
+    display:none;
+}
+.blue-bg{
+    display:none;
+}
 h1{
-    color:blue;
+    text-align: center;
+    font-size:64px;
+    color:red;
+}
+h3{
+    font-size:24px;
+}
+p{
+    font-size:16px;
+}
+a{
+    color:var(--no-thanks)
+}
+.btn-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:100px;
+}
+
+.discount-btn{
+    width:100%;
+
+    padding:1em;
+    border:none;
+    outline:none;
+    color:white;
+    background:var(--blue-btn)
 }
