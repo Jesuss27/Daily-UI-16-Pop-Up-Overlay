@@ -18,19 +18,22 @@ body{
     align-items: center;
 }
 .container{
+    position:absolute;
     border-radius:20px;
     background:white;
     width:80%;
+    height:60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    padding:.5em;
 }
 .info-div{
+
     display: flex;
     flex-direction:column;
     justify-content: space-around;
+    padding:0.35em;
     height:60vh;
     width:80%;
 }
@@ -68,10 +71,112 @@ a{
 
 .discount-btn{
     width:100%;
-
     padding:1em;
     border:none;
+    border-radius:5px;
     outline:none;
     color:white;
     background:var(--blue-btn)
+}
+.exit-btn{
+    position:absolute;
+    top:-25px;
+    left:50%;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    background:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:100;
+}
+svg{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media  screen and (min-width:420px) {
+    .container{
+        flex-direction:row;
+        padding:0.5em;
+    }
+    .info-div{
+
+    }
+    h1{
+        font-size:42px;
+        text-align: left;
+    }
+    .main-text{
+        display:flex;
+    }
+    .blue-bg{
+        display:flex;
+        position:relative;
+        height:100%;
+        width:40%;
+        background:var(--blue-bg)
+    }
+    p{
+        font-size:18px;
+    }
+    input{
+        display:block;
+    }
+  .email{
+        display:block;
+        height:70px;
+        width:80%;
+    }
+    .radio-wrapper{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+        background:cornsilk
+    }
+
+    label{
+        display:flex;
+        align-items: center;
+        width:50%;
+    }
+    input[type=radio]{
+        height:100%;
+        width:100%;
+        opacity:0;
+    }
+    .woman-btn{
+        width:50px;
+        height:50px;
+        background:black;
+        border-radius:50%;   
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .woman-btn::after{
+        content:"";
+        display: none;
+        width:25px;
+        height:25px;
+        border-radius:50%;
+        background-color: red;
+        z-index:500
+    }
+    .gender-woman:checked ~ .woman::after{
+        display:block;
+    }
+    .man-btn{
+        width:50px;
+        height:50px;
+        background:black;
+        border-radius:50%;
+    }
+
+
+
+    
 }

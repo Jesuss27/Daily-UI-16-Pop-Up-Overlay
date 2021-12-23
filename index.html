@@ -15,14 +15,31 @@
 </head>
 <body>
     <div class="container">
+        <div class="exit-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26.614" height="26.614" viewBox="0 0 26.614 26.614">
+            <g id="Group_77" data-name="Group 77" transform="translate(-16730.165 -456.165)">
+              <line id="Line_40" data-name="Line 40" y2="31.638" transform="translate(16754.658 458.287) rotate(45)" fill="none" stroke="#202a48" stroke-width="6"/>
+              <line id="Line_41" data-name="Line 41" y1="31.638" transform="translate(16754.658 480.658) rotate(135)" fill="none" stroke="#202a48" stroke-width="6"/>
+            </g>
+          </svg>
+          </div>
         <div class="info-div">
             <h3>First Time Here?</h3>
             <h1>GET 15% OFF NOW</h1>
             <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi architecto quam minima veritatis nemo nihil qui quos iure nam unde!</p>
             <input type="email" class="email" placeholder="Enter your email address">
-            <div class="radio-wrapper">
-                <input type="radio" class="woman" >
-                <input type="radio" class="man">
+            <div class="radio-wrapper" id="gender">
+                <label class="gender-woman" for="gender-woman">
+                    <input type="radio" name="gender" id="radio" class="woman" >
+                    <div class="woman-btn"></div>
+                    <span>Woman</span>
+                </label>
+                <label class="gender" for="gender-man">
+                    <input type="radio" name="gender" id="radio" class="man" >
+                    <div class="man-btn"></div>
+                    <span>Man</span>
+                </label>
+                
             </div>
             <div class="btn-wrapper">
                 <a href="#"><p>NO THANKS</p></a>
